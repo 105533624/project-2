@@ -1,3 +1,5 @@
+<!-- Generative AI tool (e.g., ChatGPT) was used for suggestions, code improvement,adding comments and image generation.All AI-generated code was reviewed and modified by the author before use. -->
+
 <?php
 // 1. Turning on error reporting so any PHP bugs show up clearly on your screen
 error_reporting(E_ALL);
