@@ -12,6 +12,28 @@
     <meta name="author" content="Rafay"><!-- Author of the page -->
     <title>NextGen Web Works - About Us</title> <!-- Browser tab title -->
     <link rel="stylesheet" href="styles/styles.css"> <!-- External CSS file -->
+     <!-- =========================
+         HEADER (LOGO + NAVIGATION)
+    ========================== -->
+    <header>
+        <div class="logo">
+            <!-- Company logo -->
+            <img src="images/logo.png" alt="NextGen Web Works Logo" width="100"><!-- Logo generated using CHATGPT (OpenAI, Free version).-->
+            <div class="logo-text">
+            <!--Website name-->
+                <h1>NextGen Web Works</h1>
+            </div>
+        </div>
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="index.php" title="Home Page">Home</a></li>
+                <li><a href="jobs.php" title="Browse Careers">Jobs</a></li>
+                <li><a href="apply.php" title="Submit Application">Apply</a></li>
+                <li><a href="about.php" title="About the Team">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
     <?php
 require_once("settings.php");
 

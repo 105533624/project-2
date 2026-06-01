@@ -34,10 +34,10 @@
     </div>
     <nav><!-- Navigation bar -->
         <ul>
-            <li><a href="index.html" title="Home Page">Home</a></li><!-- Link to home -->
-            <li><a href="jobs.html" title="Browse Careers">Jobs</a></li><!-- Link to jobs -->
-            <li><a href="apply.html" title="Submit Application">Apply</a></li><!-- Current page -->
-            <li><a href="about.html" title="About the Team">About Us</a></li><!-- About page -->
+            <li><a href="index.php" title="Home Page">Home</a></li><!-- Link to home -->
+            <li><a href="jobs.php" title="Browse Careers">Jobs</a></li><!-- Link to jobs -->
+            <li><a href="apply.php" title="Submit Application">Apply</a></li><!-- Current page -->
+            <li><a href="about.php" title="About the Team">About Us</a></li><!-- About page -->
         </ul>
     </nav>
 </header>

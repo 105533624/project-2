@@ -5,29 +5,14 @@
     <!-- =========================
          META DATA + PAGE INFO
     ========================== -->
-    <meta charset="UTF-8"><!-- Character encoding (supports all text characters) -->
-    <meta name="description" content="about.html"> <!-- Page description -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="HTML, Doctype, Head, Body, Meta, Paragraph, Headings, Strong, Emphasis"><!-- SEO keywords -->
-    <meta name="author" content="Rafay"><!-- Author of the page -->
+    <meta charset="UTF-8"> <!-- Supports all characters (important for Urdu/Punjabi text) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes site responsive -->
     <title>NextGen Web Works - About Us</title> <!-- Browser tab title -->
-    <link rel="stylesheet" href="styles/styles.css"> <!-- External CSS file -->
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS file -->
     <!-- =========================
          EMBEDDED CSS (page-specific styles)
     ========================== -->
     <style>
-        .content-area {
-            padding: 40px; /* Adds spacing inside section */
-            text-align: center; /* Centers text */
-            background-color: #ffffff; /* White background */
-        }
-        .team-photo {
-            border: 8px solid #333; /* Thick border around image */
-            border-radius: 15px; /* Rounded corners */
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Soft shadow */
-            max-width: 100%; /* Makes image responsive */
-            height: auto;
-        }
         figure {
             border: 3px solid #084887; /* Blue border */
             padding: 15px; /* Space inside */
@@ -36,12 +21,6 @@
             text-align: center;
             border-radius: 8px;
             background-color: #f9fafc; /* Light background */
-        }
-        figcaption {
-            margin-top: 10px;
-            font-style: italic;
-            color: #084887;
-            font-weight: bold;
         }
     </style>
 </head>
@@ -59,10 +38,10 @@
         <!-- Navigation menu -->
         <nav>
             <ul>
-                <li><a href="index.php" title="Home Page">Home</a></li>
-                <li><a href="jobs.php" title="Browse Careers">Jobs</a></li>
-                <li><a href="apply.php" title="Submit Application">Apply</a></li>
-                <li><a href="about.php" title="About the Team">About Us</a></li>
+                <li><a href="index.html" title="Home Page">Home</a></li>
+                <li><a href="jobs.html" title="Browse Careers">Jobs</a></li>
+                <li><a href="apply.html" title="Submit Application">Apply</a></li>
+                <li><a href="about.html" title="About the Team">About Us</a></li>
             </ul>
         </nav>
     </header>
