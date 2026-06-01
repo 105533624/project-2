@@ -122,16 +122,19 @@ if (count($errors) > 0) {
     echo "<head><title>Validation Errors</title><link rel='stylesheet' href='/project-2/styles/styles.css'></head>";
     echo "<body>";
     include_once("inc/header.inc");
-    echo "<main style='padding: 2em; max-width: 600px; margin: auto;'>";
-    echo "<h2 style='color: #cc0000;'>Application Submission Failed</h2>";
+    
+    // Clean: No more inline style rules here!
+    echo "<main class='msg-container'>";
+    echo "<h2 class='error-heading'>Application Submission Failed</h2>";
     echo "<p>Please fix the following errors:</p>";
-    echo "<ul style='color: #cc0000; margin-bottom: 2em;'>";
+    echo "<ul class='error-list'>";
     foreach ($errors as $error) {
         echo "<li>" . htmlspecialchars($error) . "</li>";
     }
     echo "</ul>";
     echo "<p><a href='apply.php' class='cta'>Return to Form</a></p>";
     echo "</main>";
+    
     include_once("inc/footer.inc");
     echo "</body></html>";
 } else {
@@ -145,11 +148,14 @@ if (count($errors) > 0) {
         echo "<head><title>Application Successful</title><link rel='stylesheet' href='/project-2/styles/styles.css'></head>";
         echo "<body>";
         include_once("inc/header.inc");
-        echo "<main style='padding: 3em; text-align: center; max-width: 600px; margin: auto;'>";
-        echo "<h2 style='color: #084887;'>Application Submitted Successfully!</h2>";
-        echo "<p style='font-size: 1.2em; margin: 1.5em 0;'>Your EOI Reference Number: <strong>" . $generated_id . "</strong></p>";
+        
+        // Clean: Replaced raw HTML style strings with css class targets
+        echo "<main class='success-container'>";
+        echo "<h2 class='success-heading'>Application Submitted Successfully!</h2>";
+        echo "<p class='success-id-text'>Your EOI Reference Number: <strong>" . $generated_id . "</strong></p>";
         echo "<p>Thank you for applying. Our HR team will be in touch shortly.</p>";
         echo "</main>";
+        
         include_once("inc/footer.inc");
         echo "</body></html>";
     } else {
