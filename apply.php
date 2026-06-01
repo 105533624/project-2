@@ -46,7 +46,7 @@
      <section class="form-section">
     <h2 style="text-align: center;">Apply for a Position</h2>
     <p class="form-intro" style="text-align: center; color: #084887; font-weight: bold; font-style: italic;">Please fill in your details below to apply. All fields are required.</p>
-    <form class="form-container" method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">    <!-- FORM: Sends data to server using POST method -->
+    <form class="form-container" method="post" action="https://mercury.swin.edu.au/it000000/formtest.php" enctype="multipart/form-data">    <!-- FORM: Sends data to server using POST method. enctype required for file upload -->
         <!-- FIELDSET 1: JOB DETAILS -->
         <fieldset>
             <legend><b>Job Application Details</b></legend>
@@ -121,6 +121,13 @@
             <legend><b>Other Skills</b></legend>
             <label for="otherskills">List any additional skills you have:</label><br>
             <textarea id="otherskills" name="otherskills" rows="4" cols="50" placeholder="e.g. Figma, Adobe Illustrator, team leadership..."></textarea>
+        </fieldset>
+        <!-- FIELDSET 6: RESUME UPLOAD -->
+        <fieldset>
+            <legend><b>Resume / CV Upload</b></legend>
+            <label for="resume">Upload your resume (optional):</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"><!-- Accepts PDF, DOC, DOCX as required by process_eoi.php -->
+            <p style="color: #555; font-size: 0.9em; margin-top: 0.5em;">Accepted formats: PDF, DOC, DOCX &nbsp;|&nbsp; Maximum size: 2MB</p>
         </fieldset>
         <!-- FORM BUTTONS -->
         <div class="form-buttons">

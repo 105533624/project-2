@@ -1,0 +1,949 @@
+
+/* =============== BASE =============== */
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 10px;
+padding: 10px;
+line-height: 1.6;
+background-color: #F9FAFC;
+}
+
+/* =============== HEADER & LOGO =============== */
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #084887;
+color: #F9FAFC;
+padding: 1em 2em;
+text-align: center;
+border-radius: 8px 8px 0 0;
+}
+
+.tagline {
+color: #F5C107;
+font-weight: bold;
+font-size: 1.2em;
+}
+
+.logo {
+display: flex;
+align-items: center;
+gap: 0.5em;
+}
+
+.logo img {
+max-height: 50px;
+}
+
+.logo-text h1 {
+margin: 0;
+font-size: 1.5em;
+color: #F9FAFC;
+}
+
+/* =============== NAVIGATION =============== */
+nav ul {
+list-style: none;
+padding: 0;
+margin: 0;
+text-align: center;
+}
+
+nav li {
+display: inline-block;
+margin: 0 1em;
+}
+
+nav a {
+color: #f8f8f8;
+text-decoration: none;
+font-weight: bold;
+transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+color: #F5C107;
+text-decoration: underline;
+}
+
+/* =============== HOME , HERO / WELCOME =============== */
+.welcome {
+text-align: center;
+padding: 4em 2em;
+border-radius: 10px;
+margin: 2em auto;
+max-width: 80%;
+color: #FFFFFF;
+}
+
+.welcome h2 {
+margin: 0;
+font-size: 2.4em;
+color: #FFFFFF;
+}
+
+.welcome p {
+margin-top: 0.8em;
+font-size: 1.1em;
+color: #FFFFFF;
+}
+
+/* =============== CTA BUTTONS (site-wide) =============== */
+.cta {
+margin-top: 1.5em;
+padding: 1em 2em;
+background-color: #F5C107;
+color: #000000;
+border: none;
+border-radius: 8px;
+font-weight: bold;
+font-size: 1.1em;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: inline-block;
+}
+
+.cta:hover,
+.cta:focus {
+background-color: #084887;
+color: #FFFFFF;
+outline: 3px solid #B4654A;
+transform: scale(1.05);
+}
+
+/* =============== HOME , HERO SEARCH FORM =============== */
+
+.hero-search {
+margin-top: 2em;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 0.8em;
+flex-wrap: wrap;
+}
+
+.hero-search label {
+color: #FFFFFF;
+font-size: 1.05em;
+}
+
+.hero-search input[type="text"] {
+padding: 0.8em;
+width: 260px;
+border: 2px solid #FFFFFF;
+border-radius: 4px;
+font-family: inherit;
+}
+
+.hero-search input[type="text"]:focus {
+outline: 3px solid #F5C107;
+}
+/* =========================
+   PRICING PACKAGES SECTION
+========================= */
+
+/* SECTION BACKGROUND */
+.pricing-section {
+    background: #F0F2F5;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* TITLE */
+.pricing-section h2 {
+    font-size: 2.8rem;
+    margin-bottom: 12px;
+    font-weight: 800;
+}
+
+/* TWO-TONE TITLE */
+.pricing-section h2 .dark {
+    color: #084887;
+}
+
+.pricing-section h2 .gold {
+    color: #F5C107;
+}
+
+/* SUBTITLE */
+.pricing-subtitle {
+    color: #7A7A7A;
+    font-size: 1rem;
+    margin-bottom: 55px;
+}
+
+/* =========================
+   GRID LAYOUT
+========================= */
+.pricing-grid {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 22px;
+    flex-wrap: nowrap;
+    max-width: 1180px;
+    margin: auto;
+}
+
+/* =========================
+   GENERAL CARD STYLING
+========================= */
+.pricing-card {
+    width: 310px;
+    border-radius: 18px; 
+    overflow: hidden; 
+    transition: 0.3s ease;
+    position: relative;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+}
+
+/* HOVER EFFECT */
+.pricing-card:hover {
+    transform: translateY(-8px);
+}
+
+/* =========================
+   STARTER + ENTERPRISE
+========================= */
+.pricing-card.standard-card {
+    background: #FFFFFF; 
+    border: 1px solid #D9DDE3; 
+    padding: 40px 28px; 
+    text-align: left;
+}
+
+/* CARD TITLES */
+.standard-card h3 {
+    color: #084887;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    font-weight: 800;
+}
+
+/* PRICE */
+.standard-card .package-price {
+    margin-bottom: 30px;
+}
+
+.standard-card .price {
+    color: #084887;
+    font-size: 3rem;
+    font-weight: 800;
+    display: block;
+    line-height: 1;
+}
+
+.standard-card .per {
+    color: #8A8A8A;
+    font-size: 0.95rem;
+}
+
+/* ENTERPRISE CUSTOM TEXT */
+.standard-card .custom-price {
+    font-size: 2.5rem;
+}
+
+/* =========================
+   FEATURE LIST
+========================= */
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pricing-card ul li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+    font-size: 0.96rem;
+    line-height: 1.5;
+}
+
+/* NAVY CHECKMARKS */
+.standard-card ul li::before {
+    content: "✓";
+    width: 22px;
+    height: 22px;
+    background: #084887;
+    color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+/* =========================
+   GROWTH CARD
+========================= */
+.featured-package {
+    background: #084887;
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(8, 72, 135, 0.25);
+}
+
+/* POPULAR BANNER */
+.popular-badge {
+    background: #F5C107;
+    color: #1A1A1A;
+    text-align: center;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 12px;
+}
+
+/* BLUE HEADER BAND */
+.featured-header {
+    background: #06376C;
+    padding: 28px 20px;
+    text-align: center;
+}
+
+.featured-header h3 {
+    color: #F5C107;
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 800;
+}
+
+/* GROWTH BODY */
+.featured-content {
+    padding: 35px 28px 40px;
+    text-align: left;
+}
+
+/* GROWTH PRICE */
+.featured-package .price {
+    color: #FFFFFF;
+    font-size: 3.2rem;
+    font-weight: 800;
+    display: block;
+    line-height: 1;
+}
+
+.featured-package .per {
+    color: #B8C7D9;
+    font-size: 0.95rem;
+}
+
+/* GROWTH FEATURES */
+.featured-package ul li {
+    color: #FFFFFF;
+}
+
+/* GOLD CHECKMARKS */
+.featured-package ul li::before {
+    content: "✓";
+    width: 22px;
+    height: 22px;
+    background: #F5C107;
+    color: #111111;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.package-btn {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+/* STANDARD BUTTON */
+.standard-card .package-btn {
+    background: #084887;
+    color: #FFFFFF;
+}
+
+.standard-card .package-btn:hover {
+    background: #06376C;
+}
+
+/* FEATURED BUTTON */
+.featured-package .package-btn {
+    background: #F5C107;
+    color: #111111;
+}
+
+.featured-package .package-btn:hover {
+    opacity: 0.9;
+}
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+    .pricing-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-card {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .pricing-section h2 {
+        font-size: 2.2rem;
+    }
+}
+/* =============== TABLES =============== */
+table {
+width: 80%;
+margin: 2em auto;
+border-collapse: collapse;
+background-color: #FFFFFF;
+box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+border-radius: 8px;
+overflow: hidden;
+}
+
+caption {
+font-weight: bold;
+color: #084887;
+margin-bottom: 10px;
+}
+
+th, td {
+padding: 1em;
+border: 1px solid #DDDDDD;
+}
+
+th {
+background-color: #084887;
+color: #FFFFFF;
+}
+
+tbody tr:nth-child(even) {
+background-color: #f2f7fc;
+}
+
+tbody tr:hover {
+background-color: #F5C107;
+color: #000;
+}
+/* =============== CLIENT TESTIMONIALS =============== */
+.testimonials-section {
+    text-align: center;
+    padding: 3em 2em 4em;
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: #F9FAFC;
+}
+
+.testimonials-title {
+    font-size: 2.4em;
+    color: #084887;
+    font-weight: bold;
+    margin-bottom: 0.2em;
+}
+
+.testimonials-stars {
+    color: #F5C107;
+    font-size: 2em;
+    letter-spacing: 0.15em;
+    margin-bottom: 1em;
+}
+
+.testimonials-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1.8em;
+    flex-wrap: wrap;
+    margin-top: 1em;
+}
+
+.testimonial-card {
+    background-color: #0f4e92;
+    border-radius: 10px;
+    width: 300px;
+    min-height: 320px;
+    padding: 1.5em 1.8em 1.5em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.testimonial-quote {
+    position: absolute;
+    top: 1rem;
+    left: 1.2rem;
+    font-size: 4em;
+    color: #F5C107;
+    line-height: 1;
+    font-family: Georgia, serif;
+}
+
+.testimonial-text {
+    color: #FFFFFF;
+    font-style: italic;
+    font-size: 0.97em;
+    line-height: 1.6;
+    margin-bottom: 1.2em;
+    margin-top: auto;
+}
+
+.testimonial-divider {
+    height: 3px;
+    background-color: #F5C107;
+    width: 60%;
+    margin-bottom: 0.8em;
+    border-radius: 2px;
+}
+
+.testimonial-name {
+    color: #F5C107;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 0 0 0.2em;
+}
+
+.testimonial-company {
+    color: #c0cfe0;
+    font-size: 0.88em;
+    margin: 0;
+}
+
+.testimonials-average {
+    margin-top: 2em;
+    font-size: 1.15em;
+    font-weight: bold;
+    color: #084887;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .testimonials-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-card {
+        width: 90%;
+        max-width: 380px;
+    }
+}
+/* =============== ACKNOWLEDGEMENT =============== */
+.acknowledgement {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+background-color: #F5C107;
+color: #1a1a1a;
+padding: 2em;
+margin: 2em auto;
+border-left: 6px solid #084887;
+max-width: 80%;
+border-radius: 10px;
+gap: 3em;
+}
+
+.ack-text {
+flex: 1;
+text-align: left;
+padding-right: 2em;
+margin-right: 2em;
+}
+
+.ack-text h2 {
+color: #084887;
+margin-bottom: 0.5em;
+}
+
+.ack-images {
+display: flex;
+flex-direction: row;
+justify-content: center;
+gap: 20px;
+margin-top: 20px;
+}
+
+.ack-images img {
+width: 200px;
+height: auto;
+border-radius: 5px;
+border: 1px solid #ccc;
+}
+
+/* =============== FOOTER =============== */
+.footer {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #084887;
+color: #F5C107;
+padding: 2em;
+margin: 1em auto;
+border-left: 6px solid #9db6eb;
+max-width: 100%;
+border-radius: 4px;
+gap: 1em;
+}
+
+.footer a,
+.footer a:visited {
+color: #F5C107 !important;
+text-decoration: none;
+font-weight: bold;
+}
+
+.footer a:hover,
+.footer a:focus {
+color: #FFFFFF !important;
+text-decoration: underline;
+}
+
+/* =============== RESPONSIVE =============== */
+@media screen and (max-width: 768px) {
+header, .footer {
+flex-direction: column;
+text-align: center;
+gap: 1em;
+}
+
+nav li {
+    display: block;
+    margin: 10px 0;
+}
+
+.acknowledgement {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ack-text {
+    padding-right: 0;
+    margin-right: 0;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+}
+
+}
+
+/* =============== JOBS PAGE =============== */
+/* =========================
+   JOBS LAYOUT FIX (NEW)
+========================= */
+
+.jobs-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.jobs-main {
+    flex: 1;
+}
+
+/* =========================
+   INTRO + SEARCH CENTERING
+========================= */
+
+.jobs-intro {
+    background-color: #f2f7fc;
+    border-left: 6px solid #084887; /* 🔵 strong blue bar */
+    padding: 1.5rem;
+    margin: 2rem auto;
+    max-width: 850px;
+    border-radius: 8px;
+    color: #084887;
+
+    font-style: italic;
+}
+/* =========================
+   JOB CARD (SMALLER + CLEANER)
+========================= */
+
+.job-listing {
+    background: #ffffff;
+    padding: 1.4rem;
+    margin: 1.2rem auto;
+    max-width: 850px;
+    border-radius: 12px;
+
+    /* 🔵 NEW BLUE OUTER BORDER */
+    border: 2px solid #084887;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    transition: 0.25s ease;
+}
+.job-listing:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(8, 72, 135, 0.2);
+    border-color: #062f5b;
+}
+
+/* =========================
+   SIDEBAR (MODERN FIX)
+========================= */
+
+.benefits-sidebar {
+    width: 260px;
+    flex-shrink: 0;
+    padding: 16px;
+    border: 2px solid #084887;
+    background-color: #f2f7fc;
+    border-radius: 10px;
+    position: sticky;
+    top: 20px;
+}
+
+/* =========================
+   TEXT IMPROVEMENTS
+========================= */
+
+.job-listing h2 {
+    font-size: 1.5rem;
+    color: #084887;   /* 🔵 blue title */
+    margin-bottom: 1rem;
+}
+
+.job-listing h3 {
+    font-size: 1.05rem;
+    margin-top: 1rem;
+}
+
+.job-listing ul {
+    padding-left: 20px;
+}
+
+/* =========================
+   TAGS
+========================= */
+
+.ref-number {
+    background: #084887;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px; /* pill style */
+    font-size: 0.85rem;
+    margin-left: 10px;
+}
+
+.salary-tag {
+    font-weight: bold;
+    background: #F5C107;   /* 🟡 yellow highlight */
+    color: #000;
+    padding: 4px 10px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+/* =========================
+   SEARCH FORM FIX
+========================= */
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.search-form input,
+.search-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.search-form button {
+    padding: 10px 14px;
+    border: none;
+    background: #084887;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   RESPONSIVE FIX
+========================= */
+
+@media screen and (max-width: 900px) {
+    .jobs-container {
+        flex-direction: column;
+    }
+
+    .benefits-sidebar {
+        width: 100%;
+        position: relative;
+    }
+}
+/* APPLY FORM */
+.form-section {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+min-height: auto;
+padding: 2em 1em;
+background-color: #F9FAFC;
+}
+
+.form-container {
+background-color: #fff;
+padding: 3em;
+border-radius: 0.8em;
+border: 0.3em solid #8cc1ed;
+box-shadow: 0 4px 20px rgba(8, 72, 135, 0.15);
+max-width: 600px;
+width: 100%;
+animation: fadeIn 0.6s ease-in;
+}
+
+.form-buttons {
+margin-top: 2em;
+text-align: center;
+}
+
+.form-buttons button {
+padding: 0.8em 1.5em;
+margin: 0 0.5em;
+border: none;
+border-radius: 6px;
+background-color: #084887;
+color: white;
+font-weight: bold;
+cursor: pointer;
+transition: background 0.3s ease;
+}
+
+.form-buttons button:hover {
+background-color: #062f5b;
+}
+
+fieldset {
+border: 2px solid #ddd;
+border-radius: 8px;
+margin-bottom: 1.5em;
+padding: 1.5em;
+display: grid;
+grid-template-columns: 180px 1fr;
+gap: 12px 15px;
+align-items: center;
+}
+
+legend {
+font-weight: bold;
+color: #084887;
+}
+
+@keyframes fadeIn {
+from {
+opacity: 0;
+transform: translateY(20px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+/* ABOUT PAGE */
+.about-dl {
+background: #fdfdfd;
+padding: 20px;
+border: 1px solid #eee;
+border-radius: 8px;
+margin: 1em 0;
+}
+
+.about-dl dt {
+font-size: 1.1rem;
+color: #084887;
+margin-top: 15px;
+font-weight: bold;
+}
+
+.about-dl dd {
+margin-bottom: 10px;
+color: #555;
+padding-left: 20px;
+}
+
+.about-main {
+max-width: 1100px;
+margin: 2em auto;
+padding: 0 2em;
+}
+
+.about-main > h2 {
+color: #084887;
+text-align: center;
+margin-bottom: 1em;
+padding-bottom: 0.5em;
+border-bottom: 3px solid #F5C107;
+}
+
+.about-main section {
+margin-bottom: 2.5em;
+}
+
+.about-main section h3 {
+color: #084887;
+font-size: 1.4em;
+border-left: 5px solid #F5C107;
+padding-left: 0.8em;
+margin-bottom: 1em;
+}
+
+blockquote {
+background: #ffffff;
+border-left: 5px solid #F5C107;
+margin: 1.5em auto;
+padding: 1.5em;
+max-width: 700px;
+font-style: italic;
+border-radius: 8px;
+}
+
+/* PROGRESS BAR */
+.progress-bar {
+width: 100%;
+max-width: 600px;
+height: 12px;
+background: #ddd;
+border-radius: 20px;
+margin-bottom: 20px;
+overflow: hidden;
+}
+
+.progress {
+width: 70%;
+height: 100%;
+background: #084887;
+}

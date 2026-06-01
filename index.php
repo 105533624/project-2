@@ -1,20 +1,23 @@
 <!-- Generative AI tool (e.g., ChatGPT) was used for suggestions, code improvement,adding comments and image generation.All AI-generated code was reviewed and modified by the author before use. -->
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- =========================
          META DATA + PAGE SETUP
     ========================== -->
-    <meta charset="UTF-8"> <!-- Supports all characters -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes site responsive -->
+    <meta charset="UTF-8"><!-- Character encoding (supports all text characters) -->
+    <meta name="description" content="index.html"> <!-- Page description -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, Doctype, Head, Body, Meta, Paragraph, Headings, Strong, Emphasis"><!-- SEO keywords -->
+    <meta name="author" content="Vansh and Hamnah"><!-- Author of the page -->
     <title>NextGen Web Works - Home</title> <!-- Browser tab title -->
     <!-- External CSS file -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <!-- Embedded CSS (inside HTML) -->
     <style>
         /* Hero section background image with dark overlay */
         .hero-bg {
-            background-image: linear-gradient(rgba(8, 72, 135, 0.85), rgba(8, 72, 135, 0.85)),
+            background-image: linear-gradient(rgba(13, 3, 160, 0.93), rgba(0, 17, 72, 0.85)),
                               url('images/Gemini_Generated_Image_o8qlqro8qlqro8ql.png');
             background-size: cover; /* Makes image cover full section */
             background-position: center; /* Centers the image */
@@ -38,10 +41,10 @@
         <!-- Navigation menu -->
         <nav>
             <ul>
-                <li><a href="index.html" title="Home Page">Home</a></li>
-                <li><a href="jobs.html" title="Browse Careers">Jobs</a></li>
-                <li><a href="apply.html" title="Submit Application">Apply</a></li>
-                <li><a href="about.html" title="About the Team">About Us</a></li>
+                <li><a href="index.php" title="Home Page">Home</a></li>
+                <li><a href="jobs.php" title="Browse Careers">Jobs</a></li>
+                <li><a href="apply.php" title="Submit Application">Apply</a></li>
+                <li><a href="about.php" title="About the Team">About Us</a></li>
             </ul>
         </nav>
     </header>
@@ -63,34 +66,112 @@
                 <button type="submit" class="cta">Search</button>
             </form>
         </section>
-        <!-- =========================
-             SERVICES SECTION
-        ========================== -->
-        <section class="services">
-            <h2>Our Services</h2>
-            <p>NextGen Web Works offers a variety of digital solutions.</p>
-            <!-- Grid container for service cards -->
-            <div class="service-grid">
-                <!-- Service 1 -->
-                <div class="service-card">
-                    <h3>Web Design</h3>
-                    <p>Beautiful, responsive website tailored to your needs.</p>
-                    <span class="price">$800 - $1500</span>
-                </div>
-                <!-- Service 2 -->
-                <div class="service-card">
-                    <h3>SEO Optimisation</h3>
-                    <p>Boost your visibility and reach more customers.</p>
-                    <span class="price">$400 - $900</span>
-                </div>
-                <!-- Service 3 -->
-                <div class="service-card">
-                    <h3>Custom Enterprise Solutions</h3>
-                    <p>Contact us for a specialised quote tailored to your business.</p>
-                    <span class="price">$1000+</span>
-                </div>
+    
+<!-- =========================
+     PRICING PACKAGES SECTION
+========================= -->
+<section class="pricing-section">
+
+    <h2>
+        <span class="dark">Pricing</span>
+        <span class="gold">Packages</span>
+    </h2>
+
+    <p class="pricing-subtitle">
+        Transparent, all-inclusive pricing — no hidden fees
+    </p>
+
+    <div class="pricing-grid">
+
+        <!-- STARTER -->
+        <div class="pricing-card standard-card">
+
+            <h3>Starter</h3>
+
+            <div class="package-price">
+                <span class="price">$800</span>
+                <span class="per">/project</span>
             </div>
-        </section>
+
+            <ul>
+                <li>Up to 5 pages</li>
+                <li>Mobile responsive</li>
+                <li>Basic SEO</li>
+                <li>Contact form</li>
+                <li>3 revisions</li>
+            </ul>
+
+            <a href="apply.php" class="package-btn">
+                Get Started
+            </a>
+
+        </div>
+
+        <!-- GROWTH -->
+        <div class="pricing-card featured-package">
+
+            <div class="popular-badge">
+                MOST POPULAR
+            </div>
+
+            <div class="featured-header">
+                <h3>Growth</h3>
+            </div>
+
+            <div class="featured-content">
+
+                <div class="package-price">
+                    <span class="price">$1,500</span>
+                    <span class="per">/project</span>
+                </div>
+
+                <ul>
+                    <li>Up to 10 pages</li>
+                    <li>Advanced SEO</li>
+                    <li>CMS integration</li>
+                    <li>Analytics setup</li>
+                    <li>Google Ads setup</li>
+                    <li>6 revisions + 30-day support</li>
+                </ul>
+
+                <a href="apply.php" class="package-btn">
+                    Choose Plan
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- ENTERPRISE -->
+        <div class="pricing-card standard-card">
+
+            <h3>Enterprise</h3>
+
+            <div class="package-price">
+                <span class="price">Custom</span>
+                <span class="per">/quote</span>
+            </div>
+
+            <ul>
+                <li>Unlimited pages</li>
+                <li>Full brand strategy</li>
+                <li>Custom integrations</li>
+                <li>Dedicated manager</li>
+                <li>Priority support</li>
+                <li>Ongoing retainer options</li>
+            </ul>
+
+            <a href="apply.php" class="package-btn">
+                Contact Us
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
         <!-- =========================
              OPERATING HOURS TABLE
         ========================== -->
@@ -126,6 +207,43 @@
                 </tbody>
             </table>
         </section>
+        <!-- =========================
+     CLIENT TESTIMONIALS SECTION
+========================== -->
+<section class="testimonials-section">
+    <h2 class="testimonials-title">Client <span class="highlight">Testimonials</span></h2>
+    <div class="testimonials-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+
+    <div class="testimonials-grid">
+
+        <div class="testimonial-card">
+            <span class="testimonial-quote">&ldquo;</span>
+            <p class="testimonial-text">NextGen completely transformed our online presence. Sales doubled within 3 months of the new site launching.</p>
+            <div class="testimonial-divider"></div>
+            <p class="testimonial-name">Sarah M.</p>
+            <p class="testimonial-company">Artisan Co.</p>
+        </div>
+
+        <div class="testimonial-card">
+            <span class="testimonial-quote">&ldquo;</span>
+            <p class="testimonial-text">The team was professional, creative, and always available. The best investment we made for our business.</p>
+            <div class="testimonial-divider"></div>
+            <p class="testimonial-name">James K.</p>
+            <p class="testimonial-company">TechBridge Group</p>
+        </div>
+
+        <div class="testimonial-card">
+            <span class="testimonial-quote">&ldquo;</span>
+            <p class="testimonial-text">Incredible attention to detail and SEO results that genuinely moved the needle for our local audience.</p>
+            <div class="testimonial-divider"></div>
+            <p class="testimonial-name">Priya L.</p>
+            <p class="testimonial-company">Melbourne Eats</p>
+        </div>
+
+    </div>
+
+    <p class="testimonials-average">Average 4.9/5 across 150+ projects</p>
+</section>
         <!-- =========================
              ACKNOWLEDGEMENT SECTION
         ========================== -->
@@ -165,7 +283,6 @@
         <a href="https://vsuk0001.atlassian.net/jira/software/projects/CGRW/summary" target="_blank" rel="noopener noreferrer">Jira Board</a>
         <a href="https://github.com/105533624/Assignment_1" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
         <a href="https://105533624.github.io/Assignment_1/" target="_blank" rel="noopener noreferrer">Live Website</a>
-
     </footer>
 </body>
 </html>
