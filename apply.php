@@ -115,6 +115,12 @@ require_once(__DIR__ . "/inc/header.inc");
                         placeholder="e.g. Figma, Adobe Illustrator, team leadership..."
                         aria-label="Other skills"></textarea>
                 </fieldset>
+                 <fieldset>
+                    <legend><b>Resume / CV Upload</b></legend>
+                    <label for="resume">Upload your resume (optional):</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" aria-label="Upload your resume"><!-- Accepts PDF, DOC, DOCX as required by process_eoi.php -->
+                    <p style="color: #555; font-size: 0.9em; margin-top: 0.5em;">Accepted formats: PDF, DOC, DOCX &nbsp;|&nbsp; Maximum size: 2MB</p>
+                 </fieldset>
 
                 <div class="form-buttons">
                     <button type="submit" aria-label="Submit application">Submit Application</button>
