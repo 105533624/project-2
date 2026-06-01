@@ -125,7 +125,7 @@ require_once(__DIR__ . "/inc/header.inc");
     <h3>Expressions of Interest Logs</h3>
     <p style="font-size: 0.85em; font-style: italic; color: #666;">Click any underlined column header to sort.</p>
 
-    <table>
+    <table class="manage-table">
         <thead>
             <tr>
                 <th><a href="manage.php?sort_field=eoi_id&search_ref=<?php echo urlencode($search_ref); ?>&search_name=<?php echo urlencode($search_name); ?>">ID</a></th>
